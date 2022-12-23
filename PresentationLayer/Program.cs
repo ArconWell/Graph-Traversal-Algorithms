@@ -21,6 +21,7 @@ namespace PresentationLayer
             var (result, steps) = game.Start();
 
             Console.WriteLine($"Решение найдено: {result}\n");
+
             int i = 0;
             foreach (Step step in steps)
             {
