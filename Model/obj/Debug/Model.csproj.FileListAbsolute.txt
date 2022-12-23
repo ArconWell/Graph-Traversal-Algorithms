@@ -1,0 +1,6 @@
+E:\Институт\Магистратура\Проектирование систем искусственного интеллекта\TowersOfHanoi\Model\bin\Debug\Model.dll
+E:\Институт\Магистратура\Проектирование систем искусственного интеллекта\TowersOfHanoi\Model\bin\Debug\Model.pdb
+E:\Институт\Магистратура\Проектирование систем искусственного интеллекта\TowersOfHanoi\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\Институт\Магистратура\Проектирование систем искусственного интеллекта\TowersOfHanoi\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\Институт\Магистратура\Проектирование систем искусственного интеллекта\TowersOfHanoi\Model\obj\Debug\Model.dll
+E:\Институт\Магистратура\Проектирование систем искусственного интеллекта\TowersOfHanoi\Model\obj\Debug\Model.pdb
