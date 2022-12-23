@@ -17,7 +17,7 @@ namespace PresentationLayer
             GameLoop game = new GameLoop(new Tower(new Ring(3), new Ring(2), new Ring(1)),
                 new Tower(),
                 new Tower());
-            game.SearchType = new DepthFirstSearch();
+            game.SearchType = new GradientSearch();
             var (result, steps) = game.Start();
 
             Console.WriteLine($"Решение найдено: {result}\n");
