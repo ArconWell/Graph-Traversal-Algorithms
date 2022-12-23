@@ -11,24 +11,11 @@ namespace Model.EvaluationFunctions
     {
         public Stack<Step> Execute(Stack<Step> steps)
         {
-            Stack<Step> sortedSteps = new Stack<Step>();
-            Stack<Step>notSortedStep = new Stack<Step>();
-            foreach (Step step in steps)
-            {
-                if (!step.ToTower.Equals(GameSituation.StartTower))
-                {
-                    sortedSteps.Push(step);
-                }
-                else
-                {
-                    notSortedStep.Push(step);
-                }
-            }
-            foreach(Step step in notSortedStep)
-            {
-                sortedSteps.Push(step);
-            }
-            return sortedSteps;
+            List<Step> stepsList = new List<Step>(steps);
+
+            stepsList.Sort((step1, step2) => step1.ToTower.RingsCount.CompareTo(step2.ToTower.RingsCount));
+
+            return new Stack<Step>(stepsList);
         }
     }
 }
