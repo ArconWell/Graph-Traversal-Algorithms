@@ -11,11 +11,15 @@ namespace Model
     {
         private static List<GameSituation> cache = new List<GameSituation>();
 
-        public static void Add(GameSituation gameSituation)
+        public static void Add(GameSituation gameSituation, bool doCheckContains = true)
         {
-            if (!cache.Contains(gameSituation))
-                cache.Add(gameSituation);
+            if (doCheckContains && cache.Contains(gameSituation))
+            {
+                return;
+            }
+            cache.Add(gameSituation);
         }
+
 
         public static bool Remove(GameSituation gameSituation)
         {

@@ -18,7 +18,7 @@ namespace Model.Searches
             {
                 return value;
             }
-            GameSituationCache.Add(gameSituation);
+            GameSituationCache.Add(gameSituation, false);
 
             Stack<Step> possibleSteps = new Stack<Step>(gameSituation.GetAllPossibleSteps());
 

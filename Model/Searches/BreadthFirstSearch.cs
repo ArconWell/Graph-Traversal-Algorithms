@@ -36,7 +36,7 @@ namespace Model.Searches
                 }
                 else
                 {
-                    GameSituationCache.Add(gameSituation);
+                    GameSituationCache.Add(gameSituation, false);
                     possibleSteps.AddRange(gameSituation.GetAllPossibleSteps());
                 }
             }
